@@ -1,0 +1,34 @@
+{
+    "name": "plivo-webhook",
+    "version": "1.0.0",
+    "description": "Plivo webhook service for routing phone calls to LiveKit voice agent",
+    "main": "server.js",
+    "scripts": {
+        { 
+    " s"tnaarmte""::  ""npoldiev os-elrivveerk.ijts-"w,e
+  b h o o k""d,e
+      v " :" v"enrosdieomno"n:  s"e1r.v0e.r0."j,s
+      " 
+        " d}e,s
+  c r i"pkteiyowno"r:d s""W:e b[h"opolki vbor"i,d g"el ifvoerk iPtl"i,v o" wpehbohnoeo kc"a,l l"sv otioc eL-iavgeeKnitt" ]v,o
+  i c e" aaugtehnotr"",:
+    " R"ampaiidnc"i:r c"usietrrvye"r,.
+  j s "",l
+  i c e"nsscer"i:p t"sM"I:T "{,
+
+       " d"espteanrdte"n:c i"enso"d:e  {s
+  e r v e r".ejxsp"r,e
+  s s " :  ""d^e4v."1:8 ."2n"o,d
+         e m o n  "sbeordvye-rp.ajrss"e
+         r " :} ,"
+         ^ 1 ."2d0e.p2e"n
+         d e n}c,i
+  e s "":d e{v
+  D e p e n"deexnpcrieesss""::  {"
+    ^ 4 . 1 8".n2o"d,e
+  m o n " :" a"x^i3o.s0".:1 ""
+  ^ 1 .}4
+.}0",
+    "dotenv": "^16.0.3"
+}
+}
