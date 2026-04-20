@@ -30,6 +30,7 @@ const SIPEAR_URL = 'sip:S1hxzdlmm10.sip.livekit.cloud';
                       
                         res.set('Content-Type', 'application/xml');
                           res.send(xml);
+  });
 
                             // Plivo Hangup URL - Called when call ends
                             app.post('/plivo/hangup', (req, res) => {
