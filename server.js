@@ -22,7 +22,7 @@ app.get('/health', (req, res) => {
             // XML response to route call to LiveKit agent via SIP
 const SIPEAR_URL = 'sip:S1hxzdlmm10.sip.livekit.cloud';                <Response>
                   <Dial timeout="30">
-                      <SIP>${SIPEARN_URL}</SIP>
+                      <SIP>${SIPEAR_URL}</SIP>
                         </Dial>
                         </Response>`;
 
