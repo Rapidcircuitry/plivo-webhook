@@ -6,8 +6,7 @@ import plivo
 
 # Plivo API credentials
 AUTH_ID = "MAYWU0YZNKM2ITMJRMNY"
-AUTH_TOKEN = "YOUR_AUTH_TOKEN_HERE"  # Replace with actual token from Plivo console
-
+AUTH_TOKEN = "Y2U0NTY1NzItNzdiNC00YTIzLTQ5OWQtNDZmMDg1"  # Your Plivo AUTH_TOKEN
 # Initialize Plivo client
 client = plivo.RestClient(AUTH_ID, AUTH_TOKEN)
 
@@ -19,7 +18,7 @@ try:
                     
                         response = client.calls.create(
                                 from_="+91803144777",  # Our Plivo number
-                                        to_="+919876543210",   # TEST: Replace with YOUR mobile number
+                                        to_="+919876543210",   # TEST: Replace with YOUR mobile num# Replace with your actual test mobile number
                                                 answer_url="https://plivo-webhook.onrender.com/plivo/answer",
                                                         hangup_url="https://plivo-webhook.onrender.com/plivo/hangup"
                                                             )
