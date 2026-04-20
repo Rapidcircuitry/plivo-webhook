@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const plivo = require('plivo');
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -19,9 +20,7 @@ app.get('/health', (req, res) => {
           console.log(`Incoming call from ${from} to ${to} (Call ID: ${callUUID})`);
 
             // XML response to route call to LiveKit agent via SIP
-              const SIPEARN_URL = 'sip:S1hxzdlmm10.sip.livekit.cloud';
-                const xml = `<?xml version="1.0" encoding="UTF-8"?>
-                <Response>
+const SIPEAR_URL = 'sip:S1hxzdlmm10.sip.livekit.cloud';                <Response>
                   <Dial timeout="30">
                       <SIP>${SIPEARN_URL}</SIP>
                         </Dial>
