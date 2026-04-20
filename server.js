@@ -20,15 +20,16 @@ app.get('/health', (req, res) => {
           console.log(`Incoming call from ${from} to ${to} (Call ID: ${callUUID})`);
 
             // XML response to route call to LiveKit agent via SIP
-const SIPEAR_URL = 'sip:S1hxzdlmm10.sip.livekit.cloud';                <Response>
-                  <Dial timeout="30">
-                      <SIP>${SIPEAR_URL}</SIP>
-                        </Dial>
-                        </Response>`;
-
-                          res.set('Content-Type', 'application/xml');
-                            res.send(xml);
-                            });
+const SIPEAR_URL = 'sip:S1hxzdlmm10.sip.livekit.cloud';
+  
+    const xml = `<Response>
+        <Dial timeout="30">
+              <SIP>${SIPEAR_URL}</SIP>
+                  </Dial>
+                    </Response>`;
+                      
+                        res.set('Content-Type', 'application/xml');
+                          res.send(xml);
 
                             // Plivo Hangup URL - Called when call ends
                             app.post('/plivo/hangup', (req, res) => {
